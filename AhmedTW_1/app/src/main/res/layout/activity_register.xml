@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RegisterActivity">
+
+    <TextView
+        android:id="@+id/txt_user_rge"
+        style="@style/text_style"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/username"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.06"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.38" />
+
+    <ImageView
+
+        android:id="@+id/imageView_rge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:contentDescription="@string/page"
+        android:src="@drawable/facualty"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/txt_password_rge"
+        style="@style/text_style"
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"
+
+        android:layout_marginTop="30dp"
+        android:text="@string/pasword"
+        app:layout_constraintStart_toStartOf="@+id/txt_user_rge"
+        app:layout_constraintTop_toBottomOf="@+id/txt_user_rge" />
+
+    <EditText
+        android:id="@+id/et_user_rge"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+
+        android:autofillHints=""
+        android:ems="10"
+        android:hint="@string/enter_user"
+        android:inputType="text"
+        android:minHeight="48dp"
+        app:layout_constraintBottom_toBottomOf="@+id/txt_user_rge"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/txt_user_rge"
+        app:layout_constraintTop_toTopOf="@+id/txt_user_rge" />
+
+    <EditText
+        android:id="@+id/et_password_rge"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="0dp"
+        android:autofillHints=""
+        android:ems="10"
+        android:hint="@string/enter_password"
+        android:inputType="textPassword"
+        android:minHeight="48dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/txt_password_rge"
+        app:layout_constraintTop_toBottomOf="@+id/et_user_rge" />
+
+    <Button
+        android:id="@+id/btn_login_rge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="@string/register"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.471"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/et_phone_rge" />
+
+    <TextView
+        android:id="@+id/txt_confirm_rge"
+        style="@style/text_style"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:text="@string/confirm"
+        app:layout_constraintStart_toStartOf="@+id/txt_password_rge"
+        app:layout_constraintTop_toBottomOf="@+id/txt_password_rge" />
+
+    <EditText
+        android:id="@+id/et_cofirm_rge"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="@string/enter_cofirm_password"
+        android:inputType="textPassword"
+        android:minHeight="48dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/txt_confirm_rge"
+        app:layout_constraintTop_toBottomOf="@+id/et_password_rge" />
+
+    <TextView
+        android:id="@+id/txt_phone_rge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:inputType="phone"
+        android:minWidth="48dp"
+        android:minHeight="48dp"
+        style="@style/text_style"
+        android:text="@string/phone"
+        app:layout_constraintStart_toStartOf="@+id/txt_confirm_rge"
+        app:layout_constraintTop_toBottomOf="@+id/txt_confirm_rge" />
+
+    <EditText
+        android:id="@+id/et_phone_rge"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="@string/enter_number_phone"
+        android:inputType="text"
+        android:minHeight="48dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/txt_phone_rge"
+        app:layout_constraintTop_toTopOf="@+id/txt_phone_rge"
+        android:autofillHints="" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">تيست</string>
+    <string name="username">اسم المستخدم</string>
+    <string name="pasword">الباسورد</string>
+    <string name="enter_user">"ادخل الاسم "</string>
+    <string name="enter_password">"ادخل الباسورد "</string>
+    <string name="button">اضغط</string>
+    <string name="page">الصفحه</string>
+    <string name="add">اضافه</string>
+    <string name="login">تسجيل</string>
+    <string name="enter_string">ادخل النص</string>
+    <string name="enter_cofirm_password">تاكيد الباسورد</string>
+    <string name="confirm">تاكيد</string>
+    <string name="phone">الهاتف</string>
+    <string name="register">تسجيل</string>
+    <string name="splash_screen">الواجهه</string>
+    <string name="enter_number_phone">ادخل الهاتف</string>
+</resources>
