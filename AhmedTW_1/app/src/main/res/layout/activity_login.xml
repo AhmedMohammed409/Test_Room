@@ -11,7 +11,7 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:fillViewport="true"
-        tools:context=".ui.register.RegisterActivity">
+        tools:context=".ui.login.LoginActivity">
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
@@ -59,7 +59,7 @@
                 android:id="@+id/tvPassword"
                 style="@style/label_style"
                 android:layout_width="wrap_content"
-                android:layout_height="20dp"
+                android:layout_height="wrap_content"
                 android:layout_marginTop="48dp"
                 android:text="@string/password"
                 app:layout_constraintStart_toStartOf="parent"
@@ -76,68 +76,32 @@
                 app:layout_constraintBottom_toBottomOf="@id/tvPassword"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toEndOf="@+id/tvPassword"
-                app:layout_constraintTop_toTopOf="@+id/tvPassword"
-                tools:ignore="Autofill" />
-
-            <TextView
-                android:id="@+id/tvConfirmPassword"
-                style="@style/label_style"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="48dp"
-                android:text="@string/confirm_password"
-                app:layout_constraintStart_toStartOf="@+id/tvPassword"
-                app:layout_constraintTop_toBottomOf="@+id/tvPassword" />
-
-            <EditText
-                android:id="@+id/etConfirmPassword"
-                style="@style/input_style"
-                android:layout_width="0dp"
-                android:layout_height="50dp"
-                android:layout_marginStart="16dp"
-                android:hint="@string/enter_confirm_password"
-                android:inputType="textPassword"
-                app:layout_constraintBottom_toBottomOf="@id/tvConfirmPassword"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toEndOf="@+id/tvConfirmPassword"
-                app:layout_constraintTop_toTopOf="@id/tvConfirmPassword"
-                tools:ignore="Autofill" />
-
-            <TextView
-                android:id="@+id/tvPhone"
-                style="@style/label_style"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="48dp"
-                android:text="@string/phone"
-                app:layout_constraintStart_toStartOf="@+id/tvConfirmPassword"
-                app:layout_constraintTop_toBottomOf="@+id/tvConfirmPassword" />
-
-            <EditText
-                android:id="@+id/etPhone"
-                style="@style/input_style"
-                android:layout_width="0dp"
-                android:layout_height="50dp"
-                android:layout_marginStart="16dp"
-                android:hint="@string/enter_phone_number"
-                android:inputType="phone"
-                app:layout_constraintBottom_toBottomOf="@id/tvPhone"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toEndOf="@+id/tvPhone"
-                app:layout_constraintTop_toTopOf="@+id/tvPhone"
+                app:layout_constraintTop_toTopOf="@id/tvPassword"
                 tools:ignore="Autofill" />
 
             <Button
-                android:id="@+id/btnRegister"
+                android:id="@+id/btnLogin"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="24dp"
+                android:text="@string/login"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/etPassword" />
+
+            <TextView
+                android:id="@+id/tvRegister"
+                style="@style/label_style"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
                 android:layout_marginBottom="16dp"
-                android:text="@string/register"
+                android:text="@string/register_underlined"
+                android:textColor="#03A9F4"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/etPhone"
+                app:layout_constraintTop_toBottomOf="@+id/btnLogin"
                 app:layout_constraintVertical_bias="0.0" />
 
         </androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,18 +1,20 @@
 <resources>
-    <string name="app_name">AhmedTW_1</string>
+    <string name="app_name" translatable="false">Ahmed Database</string>
     <string name="username">Username</string>
-    <string name="pasword">Pasword</string>
-    <string name="enter_user">enter user</string>
-    <string name="enter_password">enter password</string>
-    <string name="button">Button</string>
-    <string name="page">page</string>
+    <string name="password">Password</string>
+    <string name="enter_username">Enter Username</string>
+    <string name="enter_password">Enter Password</string>
     <string name="add">Add</string>
     <string name="login">Login</string>
-    <string name="enter_string">enter string</string>
-    <string name="enter_cofirm_password">enter cofirm password</string>
-    <string name="confirm">confirm</string>
-    <string name="phone">phone</string>
-    <string name="register"><U>Register</U></string>
+    <string name="enter_confirm_password">Enter Confirm Password</string>
+    <string name="phone">Phone</string>
+    <string name="register_underlined"><U>Register</U></string>
+    <string name="register">Register</string>
     <string name="splash_screen">Splash Screen</string>
-    <string name="enter_number_phone">enter number phone</string>
+    <string name="enter_phone_number">Enter Phone Number</string>
+    <string name="faculty_logo">Faculty Logo</string>
+    <string name="confirm_password">Confirm Password</string>
+    <string name="found_an_error">Found an error</string>
+    <string name="message">Message</string>
+    <string name="enter_your_message">Enter Your Message</string>
 </resources>
